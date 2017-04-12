@@ -4,10 +4,30 @@
     <link rel="stylesheet" href="bootstrap.css">
     <script type="text/javascript">
     function validate(){
-        
-        
-        
-        
+        if(document.form.name.Value == "")
+            {
+                alert("Kolom wajib di isi!!")
+                document.forms.name.focus();
+                return false;
+            }
+        if(document.form.telepon.value == "")
+            {
+                alert("Kolom wajib di isi!!")
+                document.forms.telepon.focus();
+                return false;
+            }
+        if(document.form.email.value == "")
+            {
+                alert("Kolom wajib di isi!!")
+                document.forms.email.focus();
+                return false;
+            }
+        if(document.form.pesan.Value == "")
+            {
+                alert("Kolom wajib di isi!!")
+                document.forms.pesan.focus();
+                return false;
+            }
     }
     </script>
     </head>
@@ -53,6 +73,42 @@
                 <h3><a href="http://beokinawa.jp/ocean/">Explore Ocean</a></h3>              
             </div>
             </div>
+        </div>
+        
+        <br />
+        <div class="grid" alt="contact">
+        <div class="col-3"></div>
+            <div class="col-md-3">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2>Isi Form dibawah Ini </h2>
+                </div>
+                <div class="panel-body">               
+                    <form action="mailto:ramaqq7@gmail.com" enctype="text/plain">
+                    <div class="form-group">
+                        <p>Masukkan nama</p>
+                    <input name="name" type="nama" class="form-control" placeholder="NAMA">
+                        </div>
+                    <div class="form-group">
+                        <p>Masukkan no telp</p>
+                    <input name="telepon" type="telepon" class="form-control" placeholder="TELEPON">
+                        </div>
+                    <div class="form-group">
+                        <p>Masukkan email</p>
+                    <input name="email" type="email" class="form-control" placeholder="EMAIL">
+                        </div>
+                    <div class="form-group">
+                        <p>Masukkan pesan</p>
+                    <input name="pesan" type="pesan" class="form-control" placeholder="PESAN">
+                        </div>
+                    <input type="submit" class="btn btn-success" name="SUBMIT" value="submit">
+                        <br>                    
+                    </form>                  
+            </div>
+            </div>
+            </div>
+           
+        
         </div>
     </body>
 </html>
